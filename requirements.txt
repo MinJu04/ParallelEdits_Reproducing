@@ -1,0 +1,11 @@
+# GPU 환경: CUDA 12.x / Python 3.12 호환
+accelerate>=1.11.0
+torch>=2.5.1
+torchvision>=0.20.1
+diffusers>=0.28.0          # 최신 diffusers로 올려 Python 3.12 호환
+numpy>=1.26.0              # Python 3.12 호환
+Pillow>=10.0
+transformers>=4.35.0
+opencv-python>=4.8.1
+jax>=0.4.27
+jaxlib>=0.4.27
