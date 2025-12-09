@@ -7,7 +7,7 @@ This repository contains the reproduction of **ParallelEdits** (a text-based ima
 
 We refactored the legacy codebase to run on modern environments (**RTX 4080, CUDA 12.x, Python 3.12**) and conducted extensive experiments to find the optimal trade-off between structural consistency and image quality.
 
-## 📌 Project Overview
+## Project Overview
 
 ### Goal
 1.  **Reproduction:** Reproduce the results of the "ParallelEdits" paper using Stable Diffusion v1.5.
@@ -20,8 +20,26 @@ We refactored the legacy codebase to run on modern environments (**RTX 4080, CUD
 * **Experimental Analysis:** Detailed comparison of 4 different editing methodologies.
 
 ---
+## File Descriptions
+### Notebooks
+* **Edit_demo.ipynb**: Official demo notebook provided by the original paper authors.
+* **apply_pie.ipynb**: Modified notebook for applying the method to the PIE-Bench++ dataset.
+* **sd_ddim.ipynb**: Notebook using Stable Diffusion 1.5 with the DDIM sampler.
+* **sdxl.ipynb**: Notebook for experimenting with SDXL using prompt engineering.
+* **masa_sdxl.ipynb**: Notebook integrating MasaCtrl with Stable Diffusion XL (SDXL).
 
-## 🛠️ Environment Setup
+### Python Modules
+* **ptp_utils.py**: Utility functions required for running the Parallel Edits pipeline.
+* **pipeline_pe.py**: Core pipeline implementation for running the Parallel Edits method.
+* **pipeline_sd.py**: Customized pipeline adapted for the Stable Diffusion model.
+* **seq_aligner.py**: Utility module for sequence alignment and matching.
+
+### Others
+* **requirments.txt**: List of dependencies required to run the project.
+  
+---
+
+## Environment Setup
 
 Unlike the original implementation which relied on older dependencies, this project is optimized for modern hardware.
 
